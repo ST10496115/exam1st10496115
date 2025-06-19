@@ -26,10 +26,10 @@ class MainActivity : AppCompatActivity() {
         var artistname=findViewById<EditText>(R.id.artistname)
 
         var rating=findViewById<EditText>(R.id.rating)
-        var `nextbutton`=findViewById<Button>(R.id.button)
+        var nextbutton=findViewById<Button>(R.id.button)
         var enterbutton=findViewById<Button>(R.id.button2)
 
-       `nextbutton`.setOnClickListener {
+       nextbutton.setOnClickListener {
            val intent=Intent(this,store::class.java)
            startActivity(intent)
        }
